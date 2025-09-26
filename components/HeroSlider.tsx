@@ -1,22 +1,29 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Button from "./Button";
 
+// Build image paths dynamically based on the assets folder structure.
+// Assuming images are named 1.jpg, 2.jpg, ... 13.jpg
 const TOTAL_SLIDES = 13;
-
-// Build image paths dynamically
 const PROMO_IMAGES = Array.from(
   { length: TOTAL_SLIDES },
   (_, i) => `/assets/${i + 1}.jpg`
 );
 
-const HeroSlider: React.FC = () => {
+// Simple Button component.
+const Button = ({ children }) => {
+  return (
+    <button className="px-6 py-3 rounded-full bg-yellow-400 text-black font-semibold shadow-lg hover:bg-yellow-500 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300">
+      {children}
+    </button>
+  );
+};
+
+// Main HeroSlider component as provided by the user.
+const HeroSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide
-      ? PROMO_IMAGES.length - 1
-      : currentIndex - 1;
+    const newIndex = isFirstSlide ? PROMO_IMAGES.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
@@ -31,7 +38,7 @@ const HeroSlider: React.FC = () => {
     return () => clearInterval(sliderInterval);
   }, [goToNext]);
 
-  const goToSlide = (slideIndex: number) => {
+  const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
 
@@ -132,4 +139,13 @@ const HeroSlider: React.FC = () => {
   );
 };
 
-export default HeroSlider;
+// Main App component to render the HeroSlider
+const App = () => {
+  return (
+    <div className="w-full min-h-screen bg-gray-900 flex flex-col justify-center items-center">
+      <HeroSlider />
+    </div>
+  );
+};
+
+export default App;
