@@ -64,7 +64,7 @@ const HeroSlider: React.FC = () => {
 
             {/* Play Now Button */}
             <div className="absolute bottom-16 left-1/2 -translate-x-1/2 z-10 transform group-hover:scale-105 transition-transform duration-300 ease-in-out">
-                <a href="https://www.funxxyfe51.com/#/pages/login/register?invitationCode=5097269017" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bg678p.com/#/pages/login/register?invitationCode=5097269017" target="_blank" rel="noopener noreferrer">
                     <Button>Play Now</Button>
                 </a>
             </div>
