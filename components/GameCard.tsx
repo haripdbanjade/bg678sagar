@@ -21,7 +21,7 @@ interface GameCardProps {
 const GameCard: React.FC<GameCardProps> = ({ game }) => {
     return (
         <a 
-            href="https://www.funxxyfe51.com/#/pages/login/register?invitationCode=5097269017" 
+            href="https://www.bg678p.com/#/pages/login/register?invitationCode=5097269017" 
             target="_blank" 
             rel="noopener noreferrer"
             className="block group relative overflow-hidden rounded-xl shadow-lg"
