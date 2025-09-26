@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback } from "react";
 const TOTAL_SLIDES = 13;
 const PROMO_IMAGES = Array.from(
   { length: TOTAL_SLIDES },
-  (_, i) => `/assets/${i + 1}.jpg`
+  (_, i) => `/public/assets/${i + 1}.jpg`
 );
 
 // Simple Button component.
