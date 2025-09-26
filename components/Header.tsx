@@ -40,7 +40,7 @@ const Header: React.FC = () => {
                     <NavLink to="/contact" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Contact</NavLink>
                 </nav>
                 <div>
-                     <a href="https://www.funxxyfe51.com/#/pages/login/register?invitationCode=5097269017" target="_blank" rel="noopener noreferrer">
+                     <a href="https://www.bg678p.com/#/pages/login/register?invitationCode=5097269017" target="_blank" rel="noopener noreferrer">
                         <Button>Sign Up</Button>
                     </a>
                 </div>
