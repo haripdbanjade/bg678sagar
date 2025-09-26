@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-// Build image paths dynamically based on the assets folder structure.
+// The path is now relative to the public directory.
 // Assuming images are named 1.jpg, 2.jpg, ... 13.jpg
 const TOTAL_SLIDES = 13;
 const PROMO_IMAGES = Array.from(
@@ -44,7 +44,7 @@ const HeroSlider = () => {
 
   return (
     <section
-      className="relative w-full h-[50vh] md:h-[80vh] -mt-20 group"
+      className="relative w-full h-[50vh] md:h-[80vh] group"
       aria-live="polite"
     >
       {/* Slides */}
