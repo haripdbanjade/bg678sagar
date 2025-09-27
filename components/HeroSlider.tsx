@@ -44,7 +44,7 @@ const HeroSlider = () => {
 
   return (
     <section
-      className="relative w-full h-[50vh] md:h-[80vh] group"
+      className="relative w-full h-screen sm:h-[60vh] md:h-[80vh] group"
       aria-live="polite"
     >
       {/* Slides */}
