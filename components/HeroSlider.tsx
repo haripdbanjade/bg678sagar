@@ -142,7 +142,7 @@ const HeroSlider = () => {
 // Main App component to render the HeroSlider
 const App = () => {
   return (
-    <div className="w-full min-h-screen bg-gray-900 flex flex-col justify-center items-center">
+    <div className="w-full min-h-screen bg-gray-900 flex flex-col md:justify-center md:items-center">
       <HeroSlider />
     </div>
   );
